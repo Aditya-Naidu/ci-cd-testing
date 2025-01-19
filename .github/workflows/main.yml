@@ -1,0 +1,16 @@
+name: Example CI
+
+on:
+  push:
+    branches: [ main ]
+  # You can add other triggers if you like
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: 21f3003062@ds.study.iitm.ac.in  # <-- Email address in the step name
+        run: echo "Hello, world!"
